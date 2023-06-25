@@ -31,9 +31,9 @@ def add_corners(im):
     im.putalpha(mask)
 
 
-async def gen_thumb(videoid, user_id):
-    if os.path.isfile(f"cache/{videoid}_{user_id}.png"):
-        return f"cache/{videoid}_{user_id}.png"
+async def gen_thumb(videoid, chat_id):
+    if os.path.isfile(f"cache/{videoid}_{chat_id}.png"):
+        return f"cache/{videoid}_{chat_id}.png"
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
         results = VideosSearch(url, limit=1)
@@ -164,16 +164,16 @@ async def gen_thumb(videoid, user_id):
             os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-        background.save(f"cache/{videoid}_{user_id}.png")
-        return f"cache/{videoid}_{user_id}.png"
+        background.save(f"cache/{videoid}_{chat_id}.png")
+        return f"cache/{videoid}_{chat_id}.png"
     except Exception as e:
         print(e)
         return YOUTUBE_IMG_URL
 
 
-async def gen_qthumb(videoid, user_id):
-    if os.path.isfile(f"cache/que{videoid}_{user_id}.png"):
-        return f"cache/que{videoid}_{user_id}.png"
+async def gen_qthumb(videoid, chat_id):
+    if os.path.isfile(f"cache/que{videoid}_{chat_id}.png"):
+        return f"cache/que{videoid}_{chat_id}.png"
     url = f"https://www.youtube.com/watch?v={videoid}"
     try:
         results = VideosSearch(url, limit=1)
@@ -305,9 +305,9 @@ async def gen_qthumb(videoid, user_id):
             os.remove(f"cache/thumb{videoid}.png")
         except:
             pass
-        file = f"cache/que{videoid}_{user_id}.png"
-        background.save(f"cache/que{videoid}_{user_id}.png")
-        return f"cache/que{videoid}_{user_id}.png"
+        file = f"cache/que{videoid}_{chat_id}.png"
+        background.save(f"cache/que{videoid}_{chat_id}.png")
+        return f"cache/que{videoid}_{chat_id}.png"
     except Exception as e:
         print(e)
         return YOUTUBE_IMG_URL
