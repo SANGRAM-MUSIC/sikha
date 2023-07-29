@@ -38,7 +38,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                callback_data="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/MissShikha_Bot?startgroup=true",
             )
         ],
         [
@@ -58,7 +58,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+                text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
@@ -100,7 +100,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                callback_data="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/MissShikha_Bot?startgroup=true",
             )
         ],
         [
@@ -120,7 +120,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+                text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
@@ -136,7 +136,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                callback_data="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/MissShikha_Bot?startgroup=true",
             )
         ],
         [
@@ -159,7 +159,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+                text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
@@ -175,7 +175,7 @@ def telegram_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                callback_data="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/MissShikha_Bot?startgroup=true",
             )
         ],
         [
@@ -195,7 +195,7 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+                text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
@@ -238,7 +238,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
          [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                callback_data="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/MissShikha_Bot?startgroup=true",
             )
         ],
         [
@@ -249,7 +249,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+                text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
@@ -360,7 +360,7 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+                text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
