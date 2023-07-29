@@ -54,32 +54,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
-        [
-            InlineKeyboardButton(
-
-                text="《10",
-
-                callback_data=f"ADMIN 1|{chat_id}",
-
-            ),
-
-            
-
-            InlineKeyboardButton(
-
-                text="ᴄʟᴏsᴇ", callback_data=f"close",
-
-            ),
-
-            InlineKeyboardButton(
-
-                text="10》",
-
-                callback_data=f"ADMIN 2|{chat_id}",
-
-            ),
-
-        ],
+        
     ]
     return buttons
 
@@ -131,32 +106,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
-        [
-            InlineKeyboardButton(
-
-                text="《10",
-
-                callback_data=f"ADMIN 1|{chat_id}",
-
-            ),
-
-            
-
-            InlineKeyboardButton(
-
-                text="ᴄʟᴏsᴇ", callback_data=f"close",
-
-            ),
-
-            InlineKeyboardButton(
-
-                text="10》",
-
-                callback_data=f"ADMIN 2|{chat_id}",
-
-            ),
-
-        ],
+    
     ]
     return buttons
 
@@ -187,32 +137,7 @@ def stream_markup(_, videoid, chat_id):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
-        [
-            InlineKeyboardButton(
-
-                text="《10",
-
-                callback_data=f"ADMIN 1|{chat_id}",
-
-            ),
-
-            
-
-            InlineKeyboardButton(
-
-                text="ᴄʟᴏsᴇ", callback_data=f"close",
-
-            ),
-
-            InlineKeyboardButton(
-
-                text="10》",
-
-                callback_data=f"ADMIN 2|{chat_id}",
-
-            ),
-
-        ],
+        
     ]
     return buttons
 
