@@ -37,8 +37,8 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
+                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                callback_data="https://t.me/MissShikha_Bot?startgroup=welcome",
             )
         ],
         [
@@ -58,11 +58,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="➕ ᴩʟᴀʏʟɪsᴛ ➕",
-                callback_data=f"add_playlist {videoid}",
+                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+              url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data="close"
+                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
     ]
@@ -99,8 +99,8 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
+                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                callback_data="https://t.me/MissShikha_Bot?startgroup=welcome",
             )
         ],
         [
@@ -120,6 +120,10 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+              url="https://t.me/vip_creators",
+            ),
+            InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
@@ -131,8 +135,8 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
+                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                callback_data="https://t.me/MissShikha_Bot?startgroup=welcome",
             )
         ],
         [
@@ -161,8 +165,8 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
+                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                callback_data="https://t.me/MissShikha_Bot?startgroup=welcome",
             )
         ],
         [
@@ -180,6 +184,15 @@ def telegram_markup(_, chat_id):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
+        [
+            InlineKeyboardButton(
+                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+              url="https://t.me/vip_creators",
+            ),
+            InlineKeyboardButton(
+                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+            )
+        ]
     ]
     return buttons
 
@@ -213,16 +226,22 @@ def track_markup(_, videoid, user_id, channel, fplay):
 
 def livestream_markup(_, videoid, user_id, mode, channel, fplay):
     buttons = [
+         [
+            InlineKeyboardButton(
+                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                callback_data="https://t.me/MissShikha_Bot?startgroup=welcome",
+            )
+        ],
         [
             InlineKeyboardButton(
-                text=_["P_B_3"],
+                text="❤ sᴛᴀʀᴛ ʟɪᴠᴇ ❤,
                 callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=f"{config.SUPPORT_GROUP}",
+                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+              url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"],
@@ -331,6 +350,10 @@ def queue_markup(_, videoid, chat_id):
             ),
         ],
         [
+            InlineKeyboardButton(
+                text=f"⛦sᴜᴘᴘᴏʀᴛ⛦",
+              url="https://t.me/vip_creators",
+            ),
             InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
