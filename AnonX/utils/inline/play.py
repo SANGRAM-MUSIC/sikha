@@ -149,6 +149,20 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
+                text="🕒 0.5x",
+                callback_data=f"SpeedUP {chat_id}|0.5",
+            ),
+            InlineKeyboardButton(
+                text="ɴᴏʀᴍᴀʟ",
+                callback_data=f"SpeedUP {chat_id}|1.0",
+            ),
+            InlineKeyboardButton(
+                text="🕓 0.75x",
+                callback_data=f"SpeedUP {chat_id}|0.75",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
@@ -171,6 +185,20 @@ def telegram_markup(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🕒 0.5x",
+                callback_data=f"SpeedUP {chat_id}|0.5",
+            ),
+            InlineKeyboardButton(
+                text="ɴᴏʀᴍᴀʟ",
+                callback_data=f"SpeedUP {chat_id}|1.0",
+            ),
+            InlineKeyboardButton(
+                text="🕓 0.75x",
+                callback_data=f"SpeedUP {chat_id}|0.75",
             ),
         ],
         [
