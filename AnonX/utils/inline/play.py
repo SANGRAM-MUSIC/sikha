@@ -422,7 +422,7 @@ close_keyboard = InlineKeyboardMarkup(
 
 def queue_markup(_, videoid, chat_id):
     buttons = [
-    buttons = [
+
         [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
