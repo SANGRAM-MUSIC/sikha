@@ -131,6 +131,12 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
@@ -147,39 +153,18 @@ def stream_markup(_, videoid, chat_id):
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
             ),
         ],
-        [
-            InlineKeyboardButton(
-                text="🕒 0.5x",
-                callback_data=f"SpeedUP {chat_id}|0.5",
-            ),
-            InlineKeyboardButton(
-                text="ɴᴏʀᴍᴀʟ",
-                callback_data=f"SpeedUP {chat_id}|1.0",
-            ),
-            InlineKeyboardButton(
-                text="🕓 0.75x",
-                callback_data=f"SpeedUP {chat_id}|0.75",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🕤 1.5x",
-                callback_data=f"SpeedUP {chat_id}|1.5",
-            ),
-            InlineKeyboardButton(
-            text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            ),
-            InlineKeyboardButton(
-                text="🕛 2.0x",
-                callback_data=f"SpeedUP {chat_id}|2.0",
-            ),
-        ],
     ]
     return buttons
 
 
 def telegram_markup(_, chat_id):
     buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
         [
             InlineKeyboardButton(
                 text="▷",
@@ -193,33 +178,6 @@ def telegram_markup(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🕒 0.5x",
-                callback_data=f"SpeedUP {chat_id}|0.5",
-            ),
-            InlineKeyboardButton(
-                text="ɴᴏʀᴍᴀʟ",
-                callback_data=f"SpeedUP {chat_id}|1.0",
-            ),
-            InlineKeyboardButton(
-                text="🕓 0.75x",
-                callback_data=f"SpeedUP {chat_id}|0.75",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🕤 1.5x",
-                callback_data=f"SpeedUP {chat_id}|1.5",
-            ),
-            InlineKeyboardButton(
-            text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            ),
-            InlineKeyboardButton(
-                text="🕛 2.0x",
-                callback_data=f"SpeedUP {chat_id}|2.0",
             ),
         ],
     ]
