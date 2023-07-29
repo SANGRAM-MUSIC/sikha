@@ -3,7 +3,7 @@ import math
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import config
-from IroX.utils.formatters import time_to_seconds
+from AnonX.utils.formatters import time_to_seconds
 
 
 ## After Edits with Timer Bar
@@ -13,23 +13,23 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     Iro = math.floor(percentage)
-    if 0 < Iro <= 10:
+    if 0 < anon <= 10:
         bar = "◉—————————"
-    elif 10 < Iro < 20:
+    elif 10 < anon < 20:
         bar = "—◉————————"
-    elif 20 <= Iro < 30:
+    elif 20 <= anon < 30:
         bar = "——◉———————"
-    elif 30 <= Iro < 40:
+    elif 30 <= anon < 40:
         bar = "———◉——————"
-    elif 40 <= Iro < 50:
+    elif 40 <= anon < 50:
         bar = "————◉—————"
-    elif 50 <= Iro < 60:
+    elif 50 <= anon < 60:
         bar = "—————◉————"
-    elif 60 <= Iro < 70:
+    elif 60 <= anon < 70:
         bar = "——————◉———"
-    elif 70 <= Iro < 80:
+    elif 70 <= anon < 80:
         bar = "———————◉——"
-    elif 80 <= Iro < 95:
+    elif 80 <= anon < 95:
         bar = "————————◉—"
     else:
         bar = "—————————◉"
@@ -75,23 +75,23 @@ def telegram_markup_timer(_, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     Iro = math.floor(percentage)
-    if 0 < Iro <= 10:
+    if 0 < anon <= 10:
         bar = "◉—————————"
-    elif 10 < Iro < 20:
+    elif 10 < anon < 20:
         bar = "—◉————————"
-    elif 20 <= Iro < 30:
+    elif 20 <= anon < 30:
         bar = "——◉———————"
-    elif 30 <= Iro < 40:
+    elif 30 <= anon < 40:
         bar = "———◉——————"
-    elif 40 <= Iro < 50:
+    elif 40 <= anon < 50:
         bar = "————◉—————"
-    elif 50 <= Iro < 60:
+    elif 50 <= anon < 60:
         bar = "—————◉————"
-    elif 60 <= Iro < 70:
+    elif 60 <= anon < 70:
         bar = "——————◉———"
-    elif 70 <= Iro < 80:
+    elif 70 <= anon < 80:
         bar = "———————◉——"
-    elif 80 <= Iro < 95:
+    elif 80 <= anon < 95:
         bar = "————————◉—"
     else:
         bar = "—————————◉"
