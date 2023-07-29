@@ -219,6 +219,12 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
@@ -236,9 +242,52 @@ def stream_markup(_, videoid, chat_id):
             ),
         ],
         [
+                InlineKeyboardButton(
+                    text="🕒0.5x",
+                    callback_data=f"SpeedUP {chat_id}|0.5",
+                ),
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
-            )
+                    text="🕓0.75x",
+                    callback_data=f"SpeedUP {chat_id}|0.75",
+                ),
+            InlineKeyboardButton(
+                    text="🕓1x",
+                    callback_data=f"SpeedUP {chat_id}|1.0",
+                ),
+            InlineKeyboardButton(
+                    text="🕤 1.5x",
+                    callback_data=f"SpeedUP {chat_id}|1.5",
+                ),
+            InlineKeyboardButton(
+                    text="🕛 2.0x",
+                    callback_data=f"SpeedUP {chat_id}|2.0",
+                ),
+        ],
+        [
+            InlineKeyboardButton(
+
+                text="《10",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
+            ),
+
+            
+
+            InlineKeyboardButton(
+
+                text="ᴄʟᴏsᴇ", callback_data=f"close",
+
+            ),
+
+            InlineKeyboardButton(
+
+                text="10》",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
         ],
     ]
     return buttons
