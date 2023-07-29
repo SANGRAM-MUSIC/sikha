@@ -508,3 +508,79 @@ def panel_markup_3(_, videoid, chat_id):
             ],
     ]
     return buttons
+
+## Queue Markup
+
+def queue_markup(_, videoid, chat_id):
+
+    buttons = [
+
+        [
+            InlineKeyboardButton(
+
+                text=_["S_B_5"],
+
+                url=f"https://t.me/{app.username}?startgroup=true",
+
+            ),
+            ],
+            [
+            InlineKeyboardButton(
+
+                text="▷",
+
+                callback_data=f"ADMIN Resume|{chat_id}",
+
+            ),
+
+            InlineKeyboardButton(
+
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+
+            ),
+
+            InlineKeyboardButton(
+
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+
+            ),
+
+            InlineKeyboardButton(
+
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+
+            ),
+
+        ],
+
+        [  
+
+            InlineKeyboardButton(
+
+                text="《10",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
+            ),
+
+            
+
+            InlineKeyboardButton(
+
+                text="ᴄʟᴏsᴇ", callback_data=f"close",
+
+            ),
+
+            InlineKeyboardButton(
+
+                text="10》",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
+        ],
+
+    ]
+
+    return buttons
