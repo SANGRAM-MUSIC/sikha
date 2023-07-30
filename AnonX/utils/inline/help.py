@@ -1,5 +1,4 @@
 from typing import Union
-
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -11,11 +10,16 @@ def help_pannel(_, START: Union[bool, int] = None):
     ]
     second = [
         InlineKeyboardButton(
-            text=_["BACK_BUTTON"],
+            # text=_["BACK_BUTTON"],
+            text="ʜᴏᴍᴇ",
             callback_data=f"settingsback_helper",
         ),
         InlineKeyboardButton(
-            text=_["CLOSEMENU_BUTTON"], callback_data=f"close"
+            text="ᴍᴏʀᴇ",
+            url=f"t.me/vip_creators",
+        ),
+        InlineKeyboardButton(
+            text="ᴄʟᴏsᴇ", callback_data=f"close"
         ),
     ]
     mark = second if START else first
@@ -88,7 +92,8 @@ def help_back_markup(_):
         [
             [
                 InlineKeyboardButton(
-                    text=_["BACK_BUTTON"],
+                    # text=_["BACK_BUTTON"],
+                    text="≽ ʙᴀᴄᴋ ≼",
                     callback_data=f"settings_back_helper",
                 ),
                 InlineKeyboardButton(
@@ -104,7 +109,7 @@ def private_help_panel(_):
     buttons = [
         [
             InlineKeyboardButton(
-                text="❄ ʜᴇʟᴩ ❄",
+                text="≽ ʙᴀᴄᴋ ≼",
                 callback_data="settings_back_helper",
             ),
         ],
