@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 import config
 from AnonX.utils.formatters import time_to_seconds
-
+from AnonX import app
 
 ## After Edits with Timer Bar
 
@@ -38,7 +38,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -100,7 +100,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -136,7 +136,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -175,7 +175,7 @@ def telegram_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -238,7 +238,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
          [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/MissShikha_Bot?startgroup=true",
+                url="https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -267,11 +267,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"IroPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"AnonPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"IroPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"AnonPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -296,6 +296,12 @@ def slider_markup(
 ):
     query = f"{query[:20]}"
     buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                url="https://t.me/{app.username}?startgroup=true",
+            )
+        ],
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
@@ -340,6 +346,12 @@ close_keyboard = InlineKeyboardMarkup(
 
 def queue_markup(_, videoid, chat_id):
     buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                url="https://t.me/{app.username}?startgroup=true",
+            )
+        ],
         [
             InlineKeyboardButton(
                 text="▷",
