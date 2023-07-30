@@ -13,8 +13,8 @@ import config
 from AnonX import app
 YOUTUBE_IMG_URL = [ 
     
-    "",
-    "",
+    "https://telegra.ph/file/1c20b4403d5508863452a.jpg",
+    "https://te.legra.ph/file/5ff72b018c76eac9ce375.jpg",
     "",
     "",
     "",
