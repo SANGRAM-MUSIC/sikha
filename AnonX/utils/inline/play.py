@@ -40,7 +40,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -102,7 +102,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -138,7 +138,7 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -177,7 +177,7 @@ def telegram_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -240,7 +240,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
          [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -301,7 +301,7 @@ def slider_markup(
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
@@ -351,7 +351,7 @@ def queue_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
-                url="https://t.me/{BOT_USERNAME}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
