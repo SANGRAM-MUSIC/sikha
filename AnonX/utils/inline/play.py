@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import config
 from AnonX.utils.formatters import time_to_seconds
 from AnonX import app
-from AnonX.utils.start import BOT_USERNAME
+from AnonX.utils.inline.start import BOT_USERNAME
 
 
 ## After Edits with Timer Bar
