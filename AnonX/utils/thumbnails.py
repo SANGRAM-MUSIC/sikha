@@ -19,6 +19,13 @@ YOUTUBE_IMG_URL = [
     "https://te.legra.ph/file/f45f7f3bd5ae4d35d4c47.jpg",
     "https://te.legra.ph/file/378df5c6518eadd4ed5d9.jpg",
     "https://te.legra.ph/file/28287fa74b777347b3356.jpg",
+    "https://te.legra.ph/file/f2314fa3890db15da9258.jpg",
+    "https://te.legra.ph/file/a3a6ab7ce343cc6ed8193.jpg",
+    "https://te.legra.ph/file/3eb18e6bd58ad72c5f7cc.jpg",
+    "https://te.legra.ph/file/354081302febe56778427.jpg",
+    "https://te.legra.ph/file/23c0731f988724ec41648.jpg",
+    "https://te.legra.ph/file/228c59fa29597e58904df.jpg",
+    "https://te.legra.ph/file/3a6622c60a2c13aa08e43.jpg",
 ]
 
 
