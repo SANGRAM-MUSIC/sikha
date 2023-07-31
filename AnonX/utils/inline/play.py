@@ -150,9 +150,6 @@ def stream_markup(_, videoid, chat_id):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="☆", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
                 text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
@@ -165,7 +162,7 @@ def stream_markup(_, videoid, chat_id):
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="☆", callback_data=f"add_playlist {videoid}"
             )
         ],
     ]
@@ -201,7 +198,7 @@ def telegram_markup(_, chat_id):
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="☆", callback_data=f"add_playlist {videoid}"
             )
         ]
     ]
@@ -363,9 +360,6 @@ def queue_markup(_, videoid, chat_id):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
-                text="☆", callback_data=f"add_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
                 text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
@@ -378,7 +372,7 @@ def queue_markup(_, videoid, chat_id):
               url="https://t.me/vip_creators",
             ),
             InlineKeyboardButton(
-                text="✯ ᴄʟᴏsᴇ ✯", callback_data=f"close"
+                text="☆", callback_data=f"add_playlist {videoid}"
             )
         ],
     ]
