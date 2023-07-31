@@ -39,7 +39,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                text=f"•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -101,7 +101,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                text=f"•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -137,7 +137,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                text=f"•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -176,7 +176,7 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                text=f"•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -239,7 +239,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
     buttons = [
          [
             InlineKeyboardButton(
-                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                text=f"•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -300,7 +300,7 @@ def slider_markup(
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                text=f"•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
@@ -350,7 +350,7 @@ def queue_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"◈ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ◈",
+                text=f"•─╼⃝𖠁𝐀ᴅᴅ ◈ 𝐌ᴇ ◈ 𝐁ᴀʙʏ𖠁⃝╾─•",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
