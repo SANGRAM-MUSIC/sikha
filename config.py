@@ -159,7 +159,7 @@ if UPSTREAM_REPO:
         print(
             "[ERROR] - Your UPSTREAM_REPO url is wrong. Please ensure that it starts with https://"
         )
-        sys.exit()
+        
 
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
