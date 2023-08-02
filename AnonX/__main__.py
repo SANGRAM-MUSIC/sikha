@@ -59,7 +59,7 @@ async def init():
         LOGGER("AnonX").error(
             "[ERROR] - \n\nHey Baby, firstly open telegram and turn on voice chat in Logger Group else fu*k off. If you ever ended voice chat in log group i will stop working and users will fu*k you up."
         )
-        sys.exit()
+        
     except:
         pass
     await Anon.decorators()
