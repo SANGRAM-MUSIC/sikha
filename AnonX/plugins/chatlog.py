@@ -23,5 +23,5 @@ async def on_left_chat_member(_, message: Message):
         remove_by = message.from_user.mention if message.from_user else "ᴜɴᴋɴᴏᴡɴ ᴜsᴇʀ"
         title = message.chat.title
         chat_id = message.chat.id
-        left = f"**✫** <b><u>𝐋ᴇғᴛ 𝐆ʀᴏᴜᴘ</u></b> **:**\n\n**𝐂ʜᴀᴛ 𝐈ᴅ :** {chat_id}\n**𝐂ʜᴀᴛ 𝐓ɪᴛʟᴇ :** {title}\n\n**𝐑ᴇᴍᴏᴠᴇᴅ 𝐁ʏ :** {remove_by}\n\n**𝐁ᴏᴛ : @{app.username}**"
+        left = f"**✫** <b><u>#𝐋ᴇғᴛ_𝐆ʀᴏᴜᴘ</u></b> **:**\n\n**𝐂ʜᴀᴛ 𝐈ᴅ :** {chat_id}\n**𝐂ʜᴀᴛ 𝐓ɪᴛʟᴇ :** {title}\n\n**𝐑ᴇᴍᴏᴠᴇᴅ 𝐁ʏ :** {remove_by}\n\n**𝐁ᴏᴛ : @{app.username}**"
         await new_message(LOG_GROUP_ID, left)
