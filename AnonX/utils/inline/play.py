@@ -45,31 +45,58 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="▷",
+
+                text="ᴘʟᴀʏ",
+
                 callback_data=f"ADMIN Resume|{chat_id}",
+
             ),
+
             InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+
+                text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"
+
             ),
+
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+
+                text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
+
             ),
+
+            
+
+        ],
+
+        [
+
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+
+                text="⏮ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
             ),
+
+
+            InlineKeyboardButton(
+
+                text="⏭ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
         ],
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
-            InlineKeyboardButton(
-                text="⛦ sᴀᴠᴇ ⛦", callback_data=f"add_playlist {videoid}"
-            )
         ],
     ]
-    return buttons
 
+    return buttons
 
 
 def telegram_markup_timer(_, chat_id, played, dur):
@@ -107,29 +134,57 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="▷",
+
+                text="ᴘʟᴀʏ",
+
                 callback_data=f"ADMIN Resume|{chat_id}",
+
             ),
+
             InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+
+                text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"
+
             ),
+
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+
+                text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
+
             ),
+
+            
+
+        ],
+
+        [
+
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+
+                text="⏮ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
             ),
+
+
+            InlineKeyboardButton(
+
+                text="⏭ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
         ],
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
-            InlineKeyboardButton(
-                text="⛦ sᴀᴠᴇ ⛦", callback_data=f"add_playlist {videoid}"
-            )
         ],
     ]
+
     return buttons
 
 
@@ -143,29 +198,57 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="▷",
+
+                text="ᴘʟᴀʏ",
+
                 callback_data=f"ADMIN Resume|{chat_id}",
+
             ),
+
             InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+
+                text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"
+
             ),
+
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+
+                text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
+
             ),
+
+            
+
+        ],
+
+        [
+
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+
+                text="⏮ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
             ),
+
+
+            InlineKeyboardButton(
+
+                text="⏭ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
         ],
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
-            InlineKeyboardButton(
-                text="⛦ sᴀᴠᴇ ⛦", callback_data=f"add_playlist {videoid}"
-            )
         ],
     ]
+
     return buttons
 
 
@@ -179,29 +262,57 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="▷",
+
+                text="ᴘʟᴀʏ",
+
                 callback_data=f"ADMIN Resume|{chat_id}",
+
             ),
+
             InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+
+                text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"
+
             ),
+
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+
+                text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
+
             ),
+
+            
+
+        ],
+
+        [
+
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+
+                text="⏮ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
             ),
+
+
+            InlineKeyboardButton(
+
+                text="⏭ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
         ],
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
-            InlineKeyboardButton(
-                text="⛦ sᴀᴠᴇ ⛦", callback_data=f"add_playlist {videoid}"
-            )
-        ]
+        ],
     ]
+
     return buttons
 
 
@@ -353,29 +464,57 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="▷",
+
+                text="ᴘʟᴀʏ",
+
                 callback_data=f"ADMIN Resume|{chat_id}",
+
             ),
+
             InlineKeyboardButton(
-                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+
+                text="ᴘᴀᴜsᴇ", callback_data=f"ADMIN Pause|{chat_id}"
+
             ),
+
             InlineKeyboardButton(
-                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+
+                text="sᴋɪᴘ", callback_data=f"ADMIN Skip|{chat_id}"
+
             ),
+
+            
+
+        ],
+
+        [
+
             InlineKeyboardButton(
-                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+
+                text="⏮ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 1|{chat_id}",
+
             ),
+
+
+            InlineKeyboardButton(
+
+                text="⏭ 10sᴇᴄ",
+
+                callback_data=f"ADMIN 2|{chat_id}",
+
+            ),
+
         ],
         [
             InlineKeyboardButton(
                 text=f"⛦ ᴊᴏɪɴ ⛦",
               url="https://t.me/vip_creators",
             ),
-            InlineKeyboardButton(
-                text="⛦ sᴀᴠᴇ ⛦", callback_data=f"add_playlist {videoid}"
-            )
         ],
     ]
+
     return buttons
 
 def panel_markup_3(_, videoid, chat_id):
